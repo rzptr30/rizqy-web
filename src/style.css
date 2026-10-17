@@ -1,0 +1,285 @@
+:root {
+  --brand: #d9480f;
+  font-family: system-ui, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #fff8f0;
+  color: #222;
+}
+.card {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+h1 {
+  font-size: 1.3rem;
+  margin: 0 0 8px;
+  color: var(--brand);
+}
+label {
+  display: block;
+  margin: 12px 0;
+  font-size: 0.9rem;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  background: var(--brand);
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.6;
+}
+.muted {
+  color: #666;
+}
+.error {
+  color: #c92a2a;
+}
+.ok {
+  color: #2b8a3e;
+}
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+}
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: var(--brand);
+  color: #fff;
+}
+.topbar .who {
+  margin-left: auto;
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+.link {
+  width: auto;
+  margin: 0;
+  padding: 4px 8px;
+  background: transparent;
+  border: 0;
+  color: inherit;
+  text-decoration: underline;
+}
+.link.danger {
+  color: #c92a2a;
+}
+.content {
+  padding: 8px 12px 80px;
+}
+.content .card {
+  margin: 12px auto;
+}
+.bottomnav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background: #fff;
+  border-top: 1px solid #ddd;
+}
+.bottomnav a {
+  flex: 1;
+  text-align: center;
+  padding: 14px 4px;
+  color: #555;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+.bottomnav a.router-link-exact-active {
+  color: var(--brand);
+  font-weight: 700;
+  border-top: 3px solid var(--brand);
+  padding-top: 11px;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 12px;
+}
+.check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.check input {
+  width: auto;
+  margin: 0;
+}
+.prow {
+  display: grid;
+  gap: 6px;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+.prow input[type="text"],
+.prow input[type="number"] {
+  margin: 0;
+}
+.prow.inactive {
+  opacity: 0.5;
+}
+.bottomnav a {
+  font-size: 0.78rem;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 12px 0;
+}
+.stat {
+  background: #fff8f0;
+  border-radius: 10px;
+  padding: 12px;
+}
+.stat small {
+  display: block;
+  color: #666;
+}
+.stat strong {
+  font-size: 1.05rem;
+}
+.stat.wide {
+  grid-column: 1 / -1;
+}
+.tabs {
+  display: flex;
+  gap: 6px;
+  margin: 8px 0;
+}
+.tabs button {
+  margin: 0;
+  padding: 8px;
+  background: #eee;
+  color: #333;
+  font-size: 0.85rem;
+}
+.tabs button.on {
+  background: var(--brand);
+  color: #fff;
+}
+.tblwrap {
+  overflow-x: auto;
+}
+.tbl {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+.tbl th,
+.tbl td {
+  padding: 6px 4px;
+  border-bottom: 1px solid #eee;
+  text-align: right;
+  white-space: nowrap;
+}
+.tbl th:first-child,
+.tbl td:first-child {
+  text-align: left;
+}
+.warn {
+  background: #fff3bf;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 0.85rem;
+}
+.bad {
+  color: #c92a2a;
+  font-weight: 700;
+}
+.menu a {
+  display: block;
+  width: 100%;
+  color: var(--brand);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 4px 0;
+}
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+.logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+}
+.update-banner {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: 70px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  background: #222;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+.update-banner span {
+  flex: 1;
+}
+.mini {
+  width: auto;
+  margin: 0;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+}
+.mini.ghost {
+  background: transparent;
+  border: 1px solid #888;
+}
